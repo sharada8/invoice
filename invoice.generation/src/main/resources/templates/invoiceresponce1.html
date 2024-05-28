@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+ <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<h1></h1>
+<div>
+	<b></b><h2 align="center">invoice for 9494</h2></b>
+	<div class="col-sm-8" align = "center">
+        <div class="panel-body" align = "center" >
+        
+     <table class="table">
+     <thead class="thead-dark">
+     <tr>
+     	<th>id</th>
+     	<th> cloths name</th>
+     	<th>cost</th>
+     	<!-- <td> <td clospan="2"><a class="btn btn-info" th:href="@{/student/}">BACK</a></td>
+     	<td> <td clospan="2"><a class="btn btn-info" th:href="@{/student/graph}">GRAPH</a></td> -->
+     </tr>
+     </thead>
+     
+     <tbody>
+     <tr th:each="cloth:${listcl}">
+     	<td th:text="${cloth.id}"> ID</td>
+     	<td th:text="${cloth.cloths}"> vegitable</td>
+     	<td th:text="${cloth.cost}"> cost </td>
+     	
+     </tbody> 
+     </table>
+</div>
+</body>
+</html>
